@@ -1,0 +1,89 @@
+{
+	"menuItems": [
+		{
+			"title": "MENU",
+			"items": [
+				{
+					"icon": "/home.png",
+					"label": "Home",
+					"href": "/"
+				},
+				{
+					"icon": "/teacher.png",
+					"label": "Teachers",
+					"href": "/teachers"
+				},
+				{
+					"icon": "/student.png",
+					"label": "Students",
+					"href": "/students"
+				},
+				{
+					"icon": "/parent.png",
+					"label": "Parents",
+					"href": "/parents"
+				},
+				{
+					"icon": "/class.png",
+					"label": "Classes",
+					"href": "/classes"
+				},
+				{
+					"icon": "/lesson.png",
+					"label": "Lessons",
+					"href": "/lessons"
+				},
+				{
+					"icon": "/exam.png",
+					"label": "Exams",
+					"href": "/exams"
+				},
+				{
+					"icon": "/assignment.png",
+					"label": "Assignments",
+					"href": "/assignments"
+				},
+				{
+					"icon": "/attendance.png",
+					"label": "Attendance",
+					"href": "/attendance"
+				},
+				{
+					"icon": "/calendar.png",
+					"label": "Events",
+					"href": "/events"
+				},
+				{
+					"icon": "/message.png",
+					"label": "Messages",
+					"href": "/messages"
+				},
+				{
+					"icon": "/announcement.png",
+					"label": "Announcements",
+					"href": "/announcements"
+				}
+			]
+		},
+		{
+			"title": "OTHER",
+			"items": [
+				{
+					"icon": "/profile.png",
+					"label": "Profile",
+					"href": "/profile"
+				},
+				{
+					"icon": "/setting.png",
+					"label": "Settings",
+					"href": "/settings"
+				},
+				{
+					"icon": "/logout.png",
+					"label": "Logout",
+					"href": "/logout"
+				}
+			]
+		}
+	]
+}
