@@ -1,0 +1,40 @@
+{
+	"events": [
+		{
+			"id": 1,
+			"title": "Parent-Teacher Conference",
+			"time": "10:00 AM – 11:30 AM",
+			"description": "Meet with teachers to discuss student progress and plans for the academic year."
+		},
+		{
+			"id": 2,
+			"title": "Science Fair",
+			"time": "12:00 PM – 3:00 PM",
+			"description": "Students present their science projects and experiments. Parents and guests are invited to attend."
+		},
+		{
+			"id": 3,
+			"title": "Math Workshop",
+			"time": "9:00 AM – 10:30 AM",
+			"description": "Interactive session to help students improve their math problem-solving skills."
+		},
+		{
+			"id": 4,
+			"title": "Sports Day",
+			"time": "8:00 AM – 12:00 PM",
+			"description": "A fun-filled day of sports activities and competitions for all grade levels."
+		},
+		{
+			"id": 5,
+			"title": "Art Exhibition",
+			"time": "1:00 PM – 4:00 PM",
+			"description": "Display of student artwork. Open to parents and community members to explore and enjoy."
+		},
+		{
+			"id": 6,
+			"title": "School Assembly",
+			"time": "11:00 AM – 12:00 PM",
+			"description": "A general assembly for important school announcements and student achievements."
+		}
+	]
+}

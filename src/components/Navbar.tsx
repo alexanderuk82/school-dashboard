@@ -10,7 +10,7 @@ const Navbar = () => {
 				<input
 					type="text"
 					placeholder="Search..."
-					className="focus:outline-none cursor-pointer w-[200px]"
+					className="focus:outline-none cursor-pointer w-[200px] bg-transparent"
 				/>
 			</div>
 
