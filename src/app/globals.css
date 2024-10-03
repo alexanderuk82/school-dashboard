@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
+=======
+
+.react-calendar {
+	width: 100% !important;
+	border: none !important;
+	font-family: "Inter", sans-serif !important;
+}
+
+button.react-calendar__tile.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+	background: #c3ebfa !important;
+	color: #333 !important;
+}
+
+button.react-calendar__tile.react-calendar__tile--now.react-calendar__month-view__days__day {
+	background-color: #fae27c !important;
+}
+
+button.react-calendar__tile.react-calendar__tile--now.react-calendar__tile--hasActive.react-calendar__year-view__months__month {
+	font-weight: bold !important;
+}
+
+span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+	font-weight: bold !important;
+}
+>>>>>>> feature/layout

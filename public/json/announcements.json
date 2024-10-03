@@ -1,0 +1,34 @@
+{
+	"announcements": [
+		{
+			"id": 1,
+			"title": "Back-to-School Night",
+			"date": "2024-10-15",
+			"description": "Join us for an evening to meet the teachers and discuss the curriculum."
+		},
+		{
+			"id": 2,
+			"title": "Holiday Celebration",
+			"date": "2024-12-20",
+			"description": "A festive celebration before the winter break, featuring performances and activities."
+		},
+		{
+			"id": 3,
+			"title": "Midterm Exams",
+			"date": "2024-11-10",
+			"description": "Midterm exams will take place. Be sure to review the schedule."
+		},
+		{
+			"id": 4,
+			"title": "Parent-Teacher Conference",
+			"date": "2024-10-25",
+			"description": "An opportunity for parents to meet with teachers to discuss student progress."
+		},
+		{
+			"id": 5,
+			"title": "School Science Fair",
+			"date": "2024-11-05",
+			"description": "Students showcase their projects at the annual science fair."
+		}
+	]
+}
