@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-=======
 
 .react-calendar {
 	width: 100% !important;
@@ -26,4 +24,3 @@ button.react-calendar__tile.react-calendar__tile--now.react-calendar__tile--hasA
 span.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
 	font-weight: bold !important;
 }
->>>>>>> feature/layout
