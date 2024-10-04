@@ -1062,94 +1062,119 @@ export const announcementsData = [
 // ];
 
 export const calendarEvents = [
+	// 4 Octubre 2024 (Viernes)
 	{
 		title: "Math",
 		allDay: false,
-		start: new Date(2024, 9, 12, 8, 0), // Octubre 12, 2024
-		end: new Date(2024, 9, 12, 8, 45)
+		start: new Date(2024, 9, 4, 8, 0), // Octubre 4, 2024
+		end: new Date(2024, 9, 4, 8, 45)
 	},
 	{
 		title: "English",
 		allDay: false,
-		start: new Date(2024, 9, 12, 9, 0), // Octubre 12, 2024
-		end: new Date(2024, 9, 12, 9, 45)
-	},
-	{
-		title: "Biology",
-		allDay: false,
-		start: new Date(2024, 9, 12, 10, 0), // Octubre 12, 2024
-		end: new Date(2024, 9, 12, 10, 45)
+		start: new Date(2024, 9, 4, 10, 0), // Octubre 4, 2024
+		end: new Date(2024, 9, 4, 10, 45)
 	},
 	{
 		title: "Physics",
 		allDay: false,
-		start: new Date(2024, 9, 12, 11, 0), // Octubre 12, 2024
-		end: new Date(2024, 9, 12, 11, 45)
+		start: new Date(2024, 9, 4, 12, 0), // Octubre 4, 2024
+		end: new Date(2024, 9, 4, 12, 45)
+	},
+	// 7 Octubre 2024 (Lunes)
+	{
+		title: "Biology",
+		allDay: false,
+		start: new Date(2024, 9, 7, 8, 0), // Octubre 7, 2024
+		end: new Date(2024, 9, 7, 8, 45)
+	},
+	{
+		title: "History",
+		allDay: false,
+		start: new Date(2024, 9, 7, 10, 0), // Octubre 7, 2024
+		end: new Date(2024, 9, 7, 10, 45)
 	},
 	{
 		title: "Chemistry",
 		allDay: false,
-		start: new Date(2024, 10, 13, 13, 0), // Noviembre 13, 2024
-		end: new Date(2024, 10, 13, 13, 45)
+		start: new Date(2024, 9, 7, 12, 0), // Octubre 7, 2024
+		end: new Date(2024, 9, 7, 12, 45)
 	},
-	{
-		title: "History",
-		allDay: false,
-		start: new Date(2024, 10, 13, 14, 0), // Noviembre 13, 2024
-		end: new Date(2024, 10, 13, 14, 45)
-	},
-	{
-		title: "English",
-		allDay: false,
-		start: new Date(2024, 11, 14, 9, 0), // Diciembre 14, 2024
-		end: new Date(2024, 11, 14, 9, 45)
-	},
-	{
-		title: "Biology",
-		allDay: false,
-		start: new Date(2024, 11, 14, 10, 0), // Diciembre 14, 2024
-		end: new Date(2024, 11, 14, 10, 45)
-	},
-	{
-		title: "Physics",
-		allDay: false,
-		start: new Date(2024, 11, 14, 11, 0), // Diciembre 14, 2024
-		end: new Date(2024, 11, 14, 11, 45)
-	},
-	{
-		title: "History",
-		allDay: false,
-		start: new Date(2025, 0, 15, 14, 0), // Enero 15, 2025
-		end: new Date(2025, 0, 15, 14, 45)
-	},
+	// 8 Octubre 2024 (Martes)
 	{
 		title: "Math",
 		allDay: false,
-		start: new Date(2025, 0, 16, 8, 0), // Enero 16, 2025
-		end: new Date(2025, 0, 16, 8, 45)
+		start: new Date(2024, 9, 8, 8, 0), // Octubre 8, 2024
+		end: new Date(2024, 9, 8, 8, 45)
 	},
 	{
 		title: "English",
 		allDay: false,
-		start: new Date(2025, 0, 16, 9, 0), // Enero 16, 2025
-		end: new Date(2025, 0, 16, 9, 45)
+		start: new Date(2024, 9, 8, 10, 0), // Octubre 8, 2024
+		end: new Date(2024, 9, 8, 10, 45)
 	},
 	{
 		title: "Physics",
 		allDay: false,
-		start: new Date(2025, 1, 12, 11, 0), // Febrero 12, 2025
-		end: new Date(2025, 1, 12, 11, 45)
+		start: new Date(2024, 9, 8, 12, 0), // Octubre 8, 2024
+		end: new Date(2024, 9, 8, 12, 45)
+	},
+	// 9 Octubre 2024 (Miércoles)
+	{
+		title: "Biology",
+		allDay: false,
+		start: new Date(2024, 9, 9, 8, 0), // Octubre 9, 2024
+		end: new Date(2024, 9, 9, 8, 45)
+	},
+	{
+		title: "History",
+		allDay: false,
+		start: new Date(2024, 9, 9, 10, 0), // Octubre 9, 2024
+		end: new Date(2024, 9, 9, 10, 45)
 	},
 	{
 		title: "Chemistry",
 		allDay: false,
-		start: new Date(2025, 1, 12, 13, 0), // Febrero 12, 2025
-		end: new Date(2025, 1, 12, 13, 45)
+		start: new Date(2024, 9, 9, 12, 0), // Octubre 9, 2024
+		end: new Date(2024, 9, 9, 12, 45)
+	},
+	// 10 Octubre 2024 (Jueves)
+	{
+		title: "Math",
+		allDay: false,
+		start: new Date(2024, 9, 10, 8, 0), // Octubre 10, 2024
+		end: new Date(2024, 9, 10, 8, 45)
+	},
+	{
+		title: "English",
+		allDay: false,
+		start: new Date(2024, 9, 10, 10, 0), // Octubre 10, 2024
+		end: new Date(2024, 9, 10, 10, 45)
+	},
+	{
+		title: "Physics",
+		allDay: false,
+		start: new Date(2024, 9, 10, 12, 0), // Octubre 10, 2024
+		end: new Date(2024, 9, 10, 12, 45)
+	},
+	// 11 Octubre 2024 (Viernes)
+	{
+		title: "Biology",
+		allDay: false,
+		start: new Date(2024, 9, 11, 8, 0), // Octubre 11, 2024
+		end: new Date(2024, 9, 11, 8, 45)
 	},
 	{
 		title: "History",
 		allDay: false,
-		start: new Date(2025, 1, 12, 14, 0), // Febrero 12, 2025
-		end: new Date(2025, 1, 12, 14, 45)
+		start: new Date(2024, 9, 11, 10, 0), // Octubre 11, 2024
+		end: new Date(2024, 9, 11, 10, 45)
+	},
+	{
+		title: "Chemistry",
+		allDay: false,
+		start: new Date(2024, 9, 11, 12, 0), // Octubre 11, 2024
+		end: new Date(2024, 9, 11, 12, 45)
 	}
+	// Continúa con eventos en días posteriores...
 ];
