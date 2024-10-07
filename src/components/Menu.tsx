@@ -39,7 +39,7 @@ const Menu = () => {
 						{section.items.map((item, i) => {
 							if (item.visible.includes(role)) {
 								return (
-									<li key={i} className="w-full p-2 hover:bg-alexSkyLight">
+									<li key={i} className="w-max p-2 hover:bg-alexSkyLight">
 										<Link
 											href={item.href}
 											className="flex items-center gap-2 text-gray-500 "

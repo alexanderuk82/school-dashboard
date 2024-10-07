@@ -14,7 +14,10 @@ export default function DashboardLayout({
 			<aside className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
 				{/* Logo */}
 
-				<Link href="/" className="flex items-center gap-2 font-bold text-2xl">
+				<Link
+					href="/"
+					className="w-max flex items-center gap-2 font-bold text-2xl"
+				>
 					<Image src="/logo.png" alt="Logo" width={32} height={32} />
 					<span className="hidden lg:flex">SchoolUI</span>
 				</Link>
