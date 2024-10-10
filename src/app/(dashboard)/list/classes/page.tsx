@@ -77,7 +77,7 @@ const ClassListPage = () => {
 					{/* Buttons filter */}
 					<div className="flex gap-4 items-center self-end">
 						<button className="w-8 h-8 flex items-center justify-center rounded-full bg-alexYellow">
-							<Image src="/filter.png" alt="Filter" width={14} height={14} />
+							<Image src="/edit.png" alt="Filter" width={14} height={14} />
 						</button>
 						<button className="w-8 h-8 flex items-center justify-center rounded-full bg-alexYellow">
 							<Image src="/sort.png" alt="Filter" width={14} height={14} />
