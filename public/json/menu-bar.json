@@ -12,67 +12,67 @@
 				{
 					"icon": "/teacher.png",
 					"label": "Teachers",
-					"href": "/teachers",
+					"href": "/list/teachers",
 					"visible": ["admin", "teacher"]
 				},
 				{
 					"icon": "/student.png",
 					"label": "Students",
-					"href": "/students",
+					"href": "/list/students",
 					"visible": ["admin", "teacher"]
 				},
 				{
 					"icon": "/parent.png",
 					"label": "Parents",
-					"href": "/parents",
+					"href": "/list/parents",
 					"visible": ["admin", "teacher", "parent"]
 				},
 				{
 					"icon": "/class.png",
 					"label": "Classes",
-					"href": "/classes",
+					"href": "/list/classes",
 					"visible": ["admin", "teacher"]
 				},
 				{
 					"icon": "/lesson.png",
 					"label": "Lessons",
-					"href": "/lessons",
+					"href": "/list/lessons",
 					"visible": ["admin", "teacher"]
 				},
 				{
 					"icon": "/exam.png",
 					"label": "Exams",
-					"href": "/exams",
+					"href": "/list/exams",
 					"visible": ["admin", "teacher", "student"]
 				},
 				{
 					"icon": "/assignment.png",
 					"label": "Assignments",
-					"href": "/assignments",
+					"href": "/list/assignments",
 					"visible": ["admin", "teacher", "student"]
 				},
 				{
 					"icon": "/attendance.png",
 					"label": "Attendance",
-					"href": "/attendance",
+					"href": "/list/attendance",
 					"visible": ["admin", "teacher"]
 				},
 				{
 					"icon": "/calendar.png",
 					"label": "Events",
-					"href": "/events",
+					"href": "/list/events",
 					"visible": ["admin", "teacher", "student", "parent"]
 				},
 				{
 					"icon": "/message.png",
 					"label": "Messages",
-					"href": "/messages",
+					"href": "/list/messages",
 					"visible": ["admin", "teacher", "student", "parent"]
 				},
 				{
 					"icon": "/announcement.png",
 					"label": "Announcements",
-					"href": "/announcements",
+					"href": "/list/announcements",
 					"visible": ["admin", "teacher", "student", "parent"]
 				}
 			]

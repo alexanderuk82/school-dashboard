@@ -1062,119 +1062,209 @@ export const announcementsData = [
 // ];
 
 export const calendarEvents = [
-	// 4 Octubre 2024 (Viernes)
+	// 14 Octubre 2024 (Lunes)
 	{
 		title: "Math",
 		allDay: false,
-		start: new Date(2024, 9, 4, 8, 0), // Octubre 4, 2024
-		end: new Date(2024, 9, 4, 8, 45)
+		start: new Date(2024, 9, 14, 8, 0),
+		end: new Date(2024, 9, 14, 8, 45)
 	},
 	{
 		title: "English",
 		allDay: false,
-		start: new Date(2024, 9, 4, 10, 0), // Octubre 4, 2024
-		end: new Date(2024, 9, 4, 10, 45)
+		start: new Date(2024, 9, 14, 10, 0),
+		end: new Date(2024, 9, 14, 10, 45)
 	},
 	{
 		title: "Physics",
 		allDay: false,
-		start: new Date(2024, 9, 4, 12, 0), // Octubre 4, 2024
-		end: new Date(2024, 9, 4, 12, 45)
+		start: new Date(2024, 9, 14, 12, 0),
+		end: new Date(2024, 9, 14, 12, 45)
 	},
-	// 7 Octubre 2024 (Lunes)
+
+	// 15 Octubre 2024 (Martes)
 	{
 		title: "Biology",
 		allDay: false,
-		start: new Date(2024, 9, 7, 8, 0), // Octubre 7, 2024
-		end: new Date(2024, 9, 7, 8, 45)
+		start: new Date(2024, 9, 15, 8, 0),
+		end: new Date(2024, 9, 15, 8, 45)
 	},
 	{
 		title: "History",
 		allDay: false,
-		start: new Date(2024, 9, 7, 10, 0), // Octubre 7, 2024
-		end: new Date(2024, 9, 7, 10, 45)
+		start: new Date(2024, 9, 15, 10, 0),
+		end: new Date(2024, 9, 15, 10, 45)
 	},
+
+	// 16 Octubre 2024 (Miércoles)
 	{
 		title: "Chemistry",
 		allDay: false,
-		start: new Date(2024, 9, 7, 12, 0), // Octubre 7, 2024
-		end: new Date(2024, 9, 7, 12, 45)
+		start: new Date(2024, 9, 16, 8, 0),
+		end: new Date(2024, 9, 16, 8, 45)
 	},
-	// 8 Octubre 2024 (Martes)
 	{
 		title: "Math",
 		allDay: false,
-		start: new Date(2024, 9, 8, 8, 0), // Octubre 8, 2024
-		end: new Date(2024, 9, 8, 8, 45)
+		start: new Date(2024, 9, 16, 10, 0),
+		end: new Date(2024, 9, 16, 10, 45)
 	},
+
+	// 17 Octubre 2024 (Jueves)
 	{
 		title: "English",
 		allDay: false,
-		start: new Date(2024, 9, 8, 10, 0), // Octubre 8, 2024
-		end: new Date(2024, 9, 8, 10, 45)
+		start: new Date(2024, 9, 17, 8, 0),
+		end: new Date(2024, 9, 17, 8, 45)
 	},
 	{
 		title: "Physics",
 		allDay: false,
-		start: new Date(2024, 9, 8, 12, 0), // Octubre 8, 2024
-		end: new Date(2024, 9, 8, 12, 45)
+		start: new Date(2024, 9, 17, 10, 0),
+		end: new Date(2024, 9, 17, 10, 45)
 	},
-	// 9 Octubre 2024 (Miércoles)
+
+	// 18 Octubre 2024 (Viernes)
 	{
 		title: "Biology",
 		allDay: false,
-		start: new Date(2024, 9, 9, 8, 0), // Octubre 9, 2024
-		end: new Date(2024, 9, 9, 8, 45)
+		start: new Date(2024, 9, 18, 8, 0),
+		end: new Date(2024, 9, 18, 8, 45)
 	},
 	{
 		title: "History",
 		allDay: false,
-		start: new Date(2024, 9, 9, 10, 0), // Octubre 9, 2024
-		end: new Date(2024, 9, 9, 10, 45)
+		start: new Date(2024, 9, 18, 10, 0),
+		end: new Date(2024, 9, 18, 10, 45)
 	},
+
+	// Semana siguiente (21 - 25 Octubre 2024)
+
+	// 21 Octubre 2024 (Lunes)
 	{
 		title: "Chemistry",
 		allDay: false,
-		start: new Date(2024, 9, 9, 12, 0), // Octubre 9, 2024
-		end: new Date(2024, 9, 9, 12, 45)
+		start: new Date(2024, 9, 21, 8, 0),
+		end: new Date(2024, 9, 21, 8, 45)
 	},
-	// 10 Octubre 2024 (Jueves)
 	{
 		title: "Math",
 		allDay: false,
-		start: new Date(2024, 9, 10, 8, 0), // Octubre 10, 2024
-		end: new Date(2024, 9, 10, 8, 45)
+		start: new Date(2024, 9, 21, 10, 0),
+		end: new Date(2024, 9, 21, 10, 45)
 	},
+
+	// 22 Octubre 2024 (Martes)
 	{
 		title: "English",
 		allDay: false,
-		start: new Date(2024, 9, 10, 10, 0), // Octubre 10, 2024
-		end: new Date(2024, 9, 10, 10, 45)
+		start: new Date(2024, 9, 22, 8, 0),
+		end: new Date(2024, 9, 22, 8, 45)
 	},
 	{
 		title: "Physics",
 		allDay: false,
-		start: new Date(2024, 9, 10, 12, 0), // Octubre 10, 2024
-		end: new Date(2024, 9, 10, 12, 45)
+		start: new Date(2024, 9, 22, 10, 0),
+		end: new Date(2024, 9, 22, 10, 45)
 	},
-	// 11 Octubre 2024 (Viernes)
+
+	// 23 Octubre 2024 (Miércoles)
 	{
 		title: "Biology",
 		allDay: false,
-		start: new Date(2024, 9, 11, 8, 0), // Octubre 11, 2024
-		end: new Date(2024, 9, 11, 8, 45)
+		start: new Date(2024, 9, 23, 8, 0),
+		end: new Date(2024, 9, 23, 8, 45)
 	},
 	{
 		title: "History",
 		allDay: false,
-		start: new Date(2024, 9, 11, 10, 0), // Octubre 11, 2024
-		end: new Date(2024, 9, 11, 10, 45)
+		start: new Date(2024, 9, 23, 10, 0),
+		end: new Date(2024, 9, 23, 10, 45)
 	},
+
+	// 24 Octubre 2024 (Jueves)
 	{
 		title: "Chemistry",
 		allDay: false,
-		start: new Date(2024, 9, 11, 12, 0), // Octubre 11, 2024
-		end: new Date(2024, 9, 11, 12, 45)
+		start: new Date(2024, 9, 24, 8, 0),
+		end: new Date(2024, 9, 24, 8, 45)
+	},
+	{
+		title: "Math",
+		allDay: false,
+		start: new Date(2024, 9, 24, 10, 0),
+		end: new Date(2024, 9, 24, 10, 45)
+	},
+
+	// 25 Octubre 2024 (Viernes)
+	{
+		title: "English",
+		allDay: false,
+		start: new Date(2024, 9, 25, 8, 0),
+		end: new Date(2024, 9, 25, 8, 45)
+	},
+	{
+		title: "Physics",
+		allDay: false,
+		start: new Date(2024, 9, 25, 10, 0),
+		end: new Date(2024, 9, 25, 10, 45)
+	},
+
+	// Última semana de octubre (28 - 31 Octubre 2024)
+
+	// 28 Octubre 2024 (Lunes)
+	{
+		title: "Biology",
+		allDay: false,
+		start: new Date(2024, 9, 28, 8, 0),
+		end: new Date(2024, 9, 28, 8, 45)
+	},
+	{
+		title: "History",
+		allDay: false,
+		start: new Date(2024, 9, 28, 10, 0),
+		end: new Date(2024, 9, 28, 10, 45)
+	},
+
+	// 29 Octubre 2024 (Martes)
+	{
+		title: "Chemistry",
+		allDay: false,
+		start: new Date(2024, 9, 29, 8, 0),
+		end: new Date(2024, 9, 29, 8, 45)
+	},
+	{
+		title: "Math",
+		allDay: false,
+		start: new Date(2024, 9, 29, 10, 0),
+		end: new Date(2024, 9, 29, 10, 45)
+	},
+
+	// 30 Octubre 2024 (Miércoles)
+	{
+		title: "English",
+		allDay: false,
+		start: new Date(2024, 9, 30, 8, 0),
+		end: new Date(2024, 9, 30, 8, 45)
+	},
+	{
+		title: "Physics",
+		allDay: false,
+		start: new Date(2024, 9, 30, 10, 0),
+		end: new Date(2024, 9, 30, 10, 45)
+	},
+
+	// 31 Octubre 2024 (Jueves)
+	{
+		title: "Biology",
+		allDay: false,
+		start: new Date(2024, 9, 31, 8, 0),
+		end: new Date(2024, 9, 31, 8, 45)
+	},
+	{
+		title: "History",
+		allDay: false,
+		start: new Date(2024, 9, 31, 10, 0),
+		end: new Date(2024, 9, 31, 10, 45)
 	}
-	// Continúa con eventos en días posteriores...
 ];
