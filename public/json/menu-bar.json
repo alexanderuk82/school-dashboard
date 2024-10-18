@@ -28,6 +28,12 @@
 					"visible": ["admin", "teacher", "parent"]
 				},
 				{
+					"icon": "/subject.png",
+					"label": "Subjects",
+					"href": "/list/subjects",
+					"visible": ["admin", "teacher"]
+				},
+				{
 					"icon": "/class.png",
 					"label": "Classes",
 					"href": "/list/classes",
