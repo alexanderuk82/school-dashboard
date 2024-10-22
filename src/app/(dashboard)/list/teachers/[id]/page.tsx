@@ -1,6 +1,7 @@
 "use client";
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
+import FormModal from "@/components/FormModal";
 import Performance from "@/components/Performance";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,8 +28,35 @@ const SingleTeacherPage = () => {
 							/>
 						</div>
 						{/* Information */}
-						<div className="m d:w-2/3 flex flex-col justify-between gap-4 w-full ">
-							<h1 className="text-2xl  font-semibold">Alexander</h1>
+						<div className="m d:w-2/3 flex flex-col justify-between gap-4 w-full cursor-pointer">
+							{/* Name */}
+							<div className="flex items-center gap-4">
+								<h1 className="text-2xl  font-semibold">Alexander</h1>
+
+								{/* Form Modal */}
+
+								{/* =================  JUST FOR TESTING ================= */}
+
+								<FormModal
+									table="teacher"
+									type="update"
+									data={{
+										username: "Alexander",
+										email: "alex@mail.com",
+										password: "1234567890",
+										firstName: "Alex",
+										lastName: "Alexander",
+										phone: "07554624521",
+										address: "123 Main St, Anytown, USA",
+										bloodType: "A+",
+										birthday: "2025-01-01",
+										sex: "Male",
+										img: null
+									}}
+								/>
+								{/* =================  JUST FOR TESTING ================= */}
+							</div>
+
 							<p className="text-xs md:text-base text-gray-500">
 								Alex is a dedicated mathematics teacher with over 10 years of
 								experience in high school education.{" "}
