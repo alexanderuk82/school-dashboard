@@ -2,7 +2,51 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import TeacherForm from "./forms/TeacherForm";
+// import TeacherForm from "./forms/TeacherForm";
+// import StudentForm from "./forms/StudentForm";
+
+// Lazy Loading Next JS New options to import components
+
+import dynamic from "next/dynamic";
+import ParentForm from "./forms/ParentForm";
+import SubjectForm from "./forms/SubjectForm";
+import ClassForm from "./forms/ClassForm";
+import LessonForm from "./forms/LessonForm";
+import ExamForm from "./forms/ExamForm";
+import AssignmentForm from "./forms/AssignmentForm";
+import ResultForm from "./forms/ResultForm";
+import EventForm from "./forms/EventForm";
+import AnnouncementForm from "./forms/AnnouncementForm";
+const TeacherForm = dynamic(() => import("./forms/TeacherForm"), {
+	loading: () => (
+		<h1 className="flex items-center justify-center h-full w-full">
+			Loading...
+		</h1>
+	)
+});
+const StudentForm = dynamic(() => import("./forms/StudentForm"), {
+	loading: () => (
+		<h1 className="flex items-center justify-center h-full w-full">
+			Loading...
+		</h1>
+	)
+});
+
+const forms: {
+	[key: string]: (type: "create" | "update", data: any) => JSX.Element;
+} = {
+	teacher: (type, data) => <TeacherForm type={type} data={data} />,
+	student: (type, data) => <StudentForm type={type} data={data} />,
+	parent: (type, data) => <ParentForm type={type} data={data} />,
+	subject: (type, data) => <SubjectForm type={type} data={data} />,
+	class: (type, data) => <ClassForm type={type} data={data} />,
+	lesson: (type, data) => <LessonForm type={type} data={data} />,
+	exam: (type, data) => <ExamForm type={type} data={data} />,
+	assignment: (type, data) => <AssignmentForm type={type} data={data} />,
+	result: (type, data) => <ResultForm type={type} data={data} />,
+	event: (type, data) => <EventForm type={type} data={data} />,
+	announcement: (type, data) => <AnnouncementForm type={type} data={data} />
+};
 
 const FormModal = ({
 	table,
@@ -46,9 +90,10 @@ const FormModal = ({
 					Delete
 				</button>
 			</form>
+		) : type === "create" || type === "update" ? (
+			forms[table](type, data)
 		) : (
-			// <TeacherForm type="create" data={data} />?
-			<TeacherForm type="update" data={data} />
+			"Form not found"
 		);
 	};
 
