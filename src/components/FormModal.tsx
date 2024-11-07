@@ -54,56 +54,59 @@ const FormModal = ({
 	id,
 	data
 }: {
-	table:
-		| "teacher"
-		| "student"
-		| "parent"
-		| "subject"
-		| "class"
-		| "lesson"
-		| "exam"
-		| "assignment"
-		| "results"
-		| "event"
-		| "announcement";
+	table: keyof typeof forms; // Dynamically get the keys of `forms` as valid values
 	type: "create" | "update" | "delete";
 	id?: number;
 	data?: any;
 }) => {
 	const size = type === "create" ? "w-8 h-8" : "w-7 h-7";
-	const bgColor =
-		type === "create"
-			? "bg-alexYellow"
-			: type === "update"
-			? "bg-alexSky"
-			: "bg-alexPurple";
+
+	const getButtonColor = (type: "create" | "update" | "delete") => {
+		switch (type) {
+			case "create":
+				return "bg-alexYellow";
+			case "update":
+				return "bg-alexSky";
+			case "delete":
+				return "bg-alexPurple";
+			default:
+				return "";
+		}
+	};
 
 	const [open, setOpen] = useState(false);
 
 	const Form = () => {
-		return type === "delete" && id ? (
-			<form action="" className="p-4 flex flex-col gap-4">
-				<span className="text-center font-medium">
-					Are you sure you want to delete this {table}?
-				</span>
-				<button className="bg-red-500 text-white py-2 px-4 rounded-md border-none hover:bg-red-600 transition-colors md:w-fit self-center">
-					Delete
-				</button>
-			</form>
-		) : type === "create" || type === "update" ? (
-			forms[table](type, data)
-		) : (
-			"Form not found"
-		);
+		if (type === "delete" && id) {
+			return (
+				<form action="" className="p-4 flex flex-col gap-4">
+					<span className="text-center font-medium">
+						Are you sure you want to delete this {table}?
+					</span>
+					<button className="bg-red-500 text-white py-2 px-4 rounded-md border-none hover:bg-red-600 transition-colors md:w-fit self-center">
+						Delete
+					</button>
+				</form>
+			);
+		}
+
+		if (type === "create" || type === "update") {
+			const FormComponent = forms[table];
+			return FormComponent ? FormComponent(type, data) : <p>Form not found</p>;
+		}
+
+		return <p>Form not found</p>;
 	};
 
 	return (
 		<>
 			<button
-				className={`${size} flex items-center justify-center rounded-full ${bgColor}`}
+				className={`${size} flex items-center justify-center rounded-full ${getButtonColor(
+					type
+				)}`}
 				onClick={() => setOpen(true)}
 			>
-				<Image src={`/${type}.png`} alt="Plus" width={16} height={16} />
+				<Image src={`/${type}.png`} alt="Button Icon" width={16} height={16} />
 			</button>
 
 			{open && (

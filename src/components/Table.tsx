@@ -1,14 +1,20 @@
+// components/Table.tsx
 "use client";
+
 import React from "react";
 
-const Table = ({
-	columns,
-	renderRow,
-	data
-}: {
+interface TableProps {
 	columns: { header: string; accessor: string; className?: string }[];
-	renderRow: (item: any) => React.ReactNode;
-	data: any[];
+	data?: any[]; // `data` es opcional porque en algunos casos usaremos `children` en lugar de `data`
+	renderRow?: (item: any) => React.ReactNode; // `renderRow` es opcional
+	children?: React.ReactNode; // `children` es opcional para los casos donde no se usa `renderRow`
+}
+
+const Table: React.FC<TableProps> = ({
+	columns,
+	data,
+	renderRow,
+	children
 }) => {
 	return (
 		<table className="w-full mt-4">
@@ -21,7 +27,9 @@ const Table = ({
 					))}
 				</tr>
 			</thead>
-			<tbody>{data.map((item) => renderRow(item))}</tbody>
+			<tbody>
+				{renderRow && data ? data.map((item) => renderRow(item)) : children}
+			</tbody>
 		</table>
 	);
 };
