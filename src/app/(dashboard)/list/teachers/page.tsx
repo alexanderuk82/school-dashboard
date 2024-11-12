@@ -9,6 +9,7 @@ import FormModal from "@/components/FormModal";
 import prisma from "@/app/lib/prisma";
 import Image from "next/image";
 import { ITEM_PER_PAGE } from "@/app/lib/settings";
+import { Prisma } from "@prisma/client";
 
 const role = "admin";
 
@@ -27,10 +28,29 @@ const TeacherListPage = async ({
 
 	// URL parameters for the search CONDITION
 
+	const query: Prisma.TeacherWhereInput = {};
+
 	if (queryParams) {
 		for (const [key, value] of Object.entries(queryParams)) {
-			if (value) {
-				console.log(key, value);
+			if (value !== undefined) {
+				// Fixed the condition
+				switch (key) {
+					case "classId": {
+						query.lessons = {
+							some: {
+								classId: parseInt(value)
+							}
+						};
+						break;
+					}
+					case "search": {
+						query.name = {
+							contains: value,
+							mode: "insensitive"
+						};
+						break;
+					}
+				}
 			}
 		}
 	}
@@ -46,6 +66,7 @@ const TeacherListPage = async ({
 
 	const [data, count] = await prisma.$transaction([
 		prisma.teacher.findMany({
+			where: query,
 			include: {
 				subjects: true,
 				classes: true
@@ -55,7 +76,7 @@ const TeacherListPage = async ({
 			skip: ITEM_PER_PAGE * (p - 1)
 		}),
 		// Count the total number of records
-		prisma.teacher.count()
+		prisma.teacher.count({ where: query })
 	]);
 
 	const adminActions = role === "admin";
